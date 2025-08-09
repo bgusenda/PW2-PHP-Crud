@@ -1,0 +1,328 @@
+/* =========================================================================== */
+
+/*  -- HTML DOCUMENT --  */
+
+/* =========================================================================== */
+
+@font-face {
+    font-family: 'Jujutsu-Kaisen';
+    src: url(../../ASSETS/FNTS/Jujutsu-Kaisen.ttf);
+}
+
+* {
+    margin:  0;
+    padding: 0;
+
+    box-sizing:        border-box;
+    font-family: 'Jujutsu-Kaisen';
+
+    font-size: 2vh;
+    transition: .2s;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+/* --------------------------------------------------------------------------- */
+
+
+
+/* =========================================================================== */
+
+/*  -- CLASSES --  */
+
+/* =========================================================================== */
+
+.container {
+    display: flex;
+
+    align-items:     center;
+    justify-content: center;
+}
+
+.row {  
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+
+
+/* =========================================================================== */
+
+/*  -- HTML EMELENTS --  */
+
+/* =========================================================================== */
+
+body {
+    background-color:   var(--color-g);
+    color:              var(--color-txt-white);
+
+    letter-spacing: 2px;
+}
+
+button {
+    cursor: pointer;
+
+    border-radius: 4px;
+    border: none;
+
+    width: 120px;
+    height: 38px;
+
+    color: var(--color-txt-white);
+}
+
+a {
+    color: var(--color-link-plain);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+/* --------------------------------------------------------------------------- */
+
+header {
+    position: sticky;
+    z-index: 3;
+
+    background-color:   var(--color-b);
+    color:              var(--color-txt-white);
+
+    width: 100%;
+    min-height: 90px;
+}
+
+#h01 { padding: 20px 20px; }
+
+/* --------------------------------------------------------------------------- */
+
+#h01-1 { order: 0; }
+
+#h01-2 { order: 2; }
+
+#h01-3 { order: 3; }
+
+/* --------------------------------------------------------------------------- */
+
+.logo { display: flex; }
+
+/* PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PE- */
+
+.logo img {
+    height: var(--size-logo-height);
+
+    cursor: grab;
+}
+
+.logo img:active {
+    transform: scale(1.15);
+
+    cursor: grabbing;
+}
+
+/* PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PET HIM PE- */
+
+.heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: var(--color-w1);
+    cursor: grab;
+
+    position: absolute;
+
+    margin-right: 500px;
+}
+
+.heart-to-right { animation: heartMove 3.2s ease-in-out 0s infinite normal forwards; }
+
+.heart-to-left { animation: heartMoveToLeft 3.2s ease-in-out 0s infinite normal forwards; }
+
+
+/* --------------------------------------------------------------------------- */
+
+.item { margin: 0px 5px; }
+
+.item a { font-size: 20px; }
+
+#h01-2-1  {
+    visibility: hidden;
+
+    background-color: transparent;
+    width: 0;
+}
+
+#h01-2-1 > span {
+    background-color: var(--color-w1);
+    width: 35px;
+    height: 8px;
+    border-radius: 10px;
+
+    margin: 3px 0px;
+}
+
+#h01-2-2 { background-color: var(--color-b); }
+
+#h01-2-2.container {
+    justify-content: space-around;
+    margin: 10px 8px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.theme {
+    background-color: var(--color-g);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 8px 0px 0px; /* top left bottom right */
+    width: 40px;
+
+    transition: .2s;
+}
+
+.theme:hover, .theme:active {
+    background-color: var(--color-w3);
+    color: var(--color-txt-black);
+}
+
+.theme img { height: var(--size-theme-height); }
+
+/* --------------------------------------------------------------------------- */
+
+main {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 590px) {
+    /* --------------------------------------------------------------------------- */
+    #h01.container {
+        display: flex;
+        justify-content: space-around !important;
+        width: 100%;
+    }
+    
+    /* --------------------------------------------------------------------------- */
+
+    #h01-1 { order: 2; }
+
+    #h01-2 { order: 1; }
+
+    #h01-3 { order: 3; }
+
+    /* --------------------------------------------------------------------------- */
+
+    .logo img { height: 100px; }
+
+    /* --------------------------------------------------------------------------- */
+
+    .item { margin: 5px; }
+    
+    #h01-2.container { flex-direction: column; }
+
+    #h01-2-1 {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* --------------------------------------------------------------------------- */
+
+    #h01-2:focus-within #mn-bar01, #h01-2:focus-within #mn-bar03 {
+        width: 40px;
+        position: absolute;
+    }
+
+    #h01-2:focus-within #mn-bar01 { transform: rotate(45deg); }
+
+    #h01-2:focus-within #mn-bar02 { opacity: 0; }
+
+    #h01-2:focus-within #mn-bar03 { transform: rotate(-45deg); }
+
+    #h01-2:focus-within #h01-2-2 { height: 190px; }
+
+    #h01-2-2 {
+        overflow: hidden;
+
+        position: absolute;
+        top: 140px;
+        left: 0;
+
+        box-shadow: 0px 0px 8px var(--color-b);
+        border-radius: 0px 0px 10px 0px;
+
+        width: 150px;
+        height: 0px;
+    }
+
+    #h01-2-2.container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* --------------------------------------------------------------------------- */
+
+    .m01.container {
+        gap: 30px 10px;
+        width: 100%;
+    }
+
+    .m01 { padding: 50px 0px 50px 10px; }
+
+    /* --------------------------------------------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 590px) {
+    /* --------------------------------------------------------------------------- */
+    .h01-2-2 {
+        visibility: visible !important;
+        margin: 0px 15px;
+    }
+    /* --------------------------------------------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 270px) {
+    /* --------------------------------------------------------------------------- */
+    #h01.container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* --------------------------------------------------------------------------- */
+    .logo { visibility: hidden; }
+    /* --------------------------------------------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1140px) {
+    /* --------------------------------------------------------------------------- */
+    .m01.container {
+        gap: 30px 20px;
+        width: 75%;
+    }
+    /* --------------------------------------------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------- */
+/* =========================================================================== */

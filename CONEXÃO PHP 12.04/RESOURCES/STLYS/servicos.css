@@ -1,0 +1,217 @@
+        /* --------------------------------------------------------------------------- */
+
+        
+        /* CARDS SERVICOS */
+
+        div.category {
+            padding: 50px 30px 0px 30px;
+            width: 100%;
+        }
+
+        div.category.container {
+            justify-content: flex-start;
+        }
+
+        div.category > p {
+            margin: 0px 18px;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+
+        div.category > span {
+            width: 10%;
+            height: 3px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        div.category > span:last-child {
+            width: 100%;
+        }
+
+        .card {
+            background-color: var(--color-box-shadow-main);
+            overflow: hidden;
+            border-radius: 15px;
+            padding: 10px;
+            height: 300px;
+        }
+
+        #m01-1-1 {
+            height: 100%;
+        }
+
+        #m01-1-1.container {align-items: flex-start; }
+
+        #m01-1-1-1 {
+            overflow: hidden;
+
+            width: 150px;
+            height: 150px;
+        }
+
+        #m01-1-1-2 {
+            margin: 10px 0px 0px 0px;
+
+            width: 100%;
+            height: 60%;
+        } 
+
+        #m01-1-1-2 > .container {
+            justify-content: flex-start;
+
+            padding: 5px 10px;
+            width: 100%;
+        }
+
+        .mm01:nth-child(2) > p {
+            margin: 0px 10px 0px 0px;
+        }
+
+        img.product-image {
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-m02);
+            border-radius: 15px;
+        }
+
+        p.product-name {
+            word-wrap: break-word;
+            width: 100px;
+        }
+
+        img.product-icon {
+            width: 15px;
+            height: 15px;
+            filter: brightness(2000%) invert(100%);
+            color: white;
+        }
+
+        .stock img.product-icon { filter: brightness(2000%); }
+
+        .m01 {
+            padding: 50px 0px 50px 30px;
+            width: 100%;
+        }
+
+        .m01.container {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 30px 30px;
+            width: 70%;
+        }
+
+        #m01-1-1-2-2 > div.container {
+            justify-content: space-around;
+            width: 35%;
+        }
+
+        #m01-1-1-2-1 { height: 40%; }
+
+        #m01-1-1-2-2 { height: 30%; }
+
+        #m01-1-1-2-3 { height: 30%; }
+
+        #h02 {
+            z-index: 4;
+            position: sticky;
+            top: 0;
+
+            background-color: var(--color-b);
+    
+            box-shadow: 0px 0px 8px var(--color-b);
+            
+            width: 100%;
+            height: max-content;
+        }
+
+        #h02-1 {
+            visibility: hidden;
+            display: none;
+
+            background-color: transparent;
+        }
+
+        #h02-1 > span {
+            background-color: var(--color-w1);
+            width: 85px;
+            height: 4px;
+            border-radius: 10px;
+
+            margin: 3px 0px;
+        }
+
+        #h02-2 {
+            background-color: var(--color-b);
+
+            padding: 12px 0px;
+            height: 0;
+        }
+
+        #h02-2 > a { margin: 0px 8px; } 
+
+        #h02-2.container {
+            justify-content: space-around;
+            margin: 10px 8px;
+        }
+
+        /* --------------------------------------------------------------------------- */
+
+        @media only screen and (max-width: 590px) {
+            /* --------------------------------------------------------------------------- */
+
+            div.category > p {
+                width: 100%;
+            }
+            div.category > span {
+                display: none;
+            }
+
+            .m01.container{
+                justify-content: center;
+                width: 100% !important;
+                padding-left: 0;
+            }
+
+            /* --------------------------------------------------------------------------- */
+
+            #h02.container {
+                justify-content: center;
+            }
+
+            /* --------------------------------------------------------------------------- */
+
+            #h02-1 {
+                visibility: visible;
+                display: flex;
+
+                width: 40px;
+                height: 40px;
+            }
+
+            /* --------------------------------------------------------------------------- */
+
+            #h02:focus-within #h02-2 { height: 200px; }
+
+            #h02:focus-within #h02-2 > a { margin: 6px 0px; }
+
+            #h02-2 {
+                overflow: hidden;
+
+                background-color: var(--color-box-shadow-main);
+
+                padding: 0;
+
+                width: 100%;
+                height: 0px;
+            }
+
+            #h02-2.container {
+                flex-direction: column;
+                margin: 0px;
+            }
+
+            /* --------------------------------------------------------------------------- */
+        }
+        /* --------------------------------------------------------------------------- */

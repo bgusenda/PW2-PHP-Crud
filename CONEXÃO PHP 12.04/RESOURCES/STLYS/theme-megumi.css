@@ -1,0 +1,56 @@
+/* =========================================================================== */
+
+/*  -- THEMES --  */ 
+
+/* =========================================================================== */
+
+:root {/* -------------------------------------------------------------------- */
+
+    /*  --  MEGUMI THEME -- */
+    /*  -- Colors --  */
+    
+    --color-w1:#d0cde0;
+    --color-w2:#f2f0ff;
+    --color-w3:#d5d3e6;
+    
+    --color-g:#3b353f;
+    
+    --color-b:#19161b;
+    
+    --color-01:#3145a6;
+    --color-02:#4062ce;
+    --color-03:#4f61b5;
+    --color-04:#1a1b66;
+    
+        --color-01-trans:#3144a6cc;
+        --color-02-trans:#4061cecc;
+        --color-03-trans:#4f61b5cc;
+        --color-04-trans:#1a1b66cc;
+    
+    --color-m01:#5739b3;
+    --color-m02:#725ebd;
+    --color-m03:#221a42;
+
+    
+    
+    --color-txt-white: #dcd9e7;
+    --color-txt-black: #18181a;
+    
+    --color-link-plain: #dcd9e7;
+    --color-link-hover: #928599;
+    
+    --color-box-shadow-card: #494752;
+    --color-box-shadow-main: #2b272e;
+    
+
+    /*  -- NOBARA THEME --  */
+
+
+
+    --color-border-test-red:   #ff0000;
+    --color-border-test-green: #00ff00;
+    --color-border-test-yellow:#fffb00;
+
+/* --------------------------------------------------------------------------- */}
+
+/* =========================================================================== */
